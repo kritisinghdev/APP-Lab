@@ -1,8 +1,5 @@
 """Experiment 15: Python's automatic garbage collection and manual control
 using the gc module  -- CO-5
-
-Python uses (1) reference counting and (2) a cyclic garbage collector
-that finds groups of objects referring to each other.
 """
 
 import gc
