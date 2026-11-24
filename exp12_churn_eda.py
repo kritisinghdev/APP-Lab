@@ -1,19 +1,13 @@
 """Experiment 12: Exploratory Data Analysis (EDA) on customer churn data,
 find patterns and clean the data  -- CO-4
 
-If 'customer_churn.csv' exists it is used (it should have a 'Churn' column
-with Yes/No). Otherwise a small sample dataset is generated automatically.
-"""
-
 import os
 import numpy as np
 import pandas as pd
 
 FILE = "customer_churn.csv"
 
-
 def make_sample_data(n=300):
-    """Create a messy sample dataset (with missing values and duplicates)."""
     rng = np.random.default_rng(1)
     df = pd.DataFrame({
         "CustomerID": range(1, n + 1),
